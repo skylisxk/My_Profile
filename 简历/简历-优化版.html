@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>李显锴 - 简历</title>
+<style>
+  :root {
+    --primary: #1a1a2e;
+    --accent: #3b5998;
+    --text: #333;
+    --light: #666;
+    --border: #e0e0e0;
+    --bg-card: #f8f9fa;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 48px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* 头部 */
+  .header {
+    text-align: center;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 20px;
+    margin-bottom: 24px;
+  }
+  .header h1 {
+    font-size: 28px;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+  }
+  .header .contact {
+    font-size: 13px;
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .header .contact a { color: var(--accent); text-decoration: none; }
+
+  /* 板块 */
+  .section { margin-bottom: 20px; }
+  .section__title {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+  }
+  .section__title span { color: var(--accent); }
+
+  /* 概述 + 技能 */
+  .summary { font-size: 13px; color: #555; line-height: 1.8; margin-bottom: 6px; }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px 24px;
+    font-size: 13px;
+  }
+  .skills-grid dt { font-weight: 600; color: var(--accent); }
+  .skills-grid dd { color: #555; margin-left: 0; }
+
+  /* 项目 */
+  .project { margin-bottom: 16px; }
+  .project__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2px;
+  }
+  .project__head h3 { font-size: 14px; font-weight: 700; }
+  .project__head .date { font-size: 12px; color: var(--light); white-space: nowrap; }
+  .project__tech { font-size: 11px; color: var(--accent); font-weight: 500; margin-bottom: 4px; }
+  .project__desc { font-size: 12px; color: #555; margin-bottom: 4px; }
+  .project ul { list-style: none; font-size: 12px; }
+  .project ul li { position: relative; padding-left: 14px; margin-bottom: 2px; color: #555; }
+  .project ul li::before { content: '▸'; position: absolute; left: 0; font-size: 10px; color: var(--accent); }
+  .result { font-size: 12px; color: #2e7d32; margin-top: 4px; }
+
+  /* 教育 */
+  .edu { display: flex; justify-content: space-between; align-items: baseline; font-size: 13px; }
+  .edu .school { font-weight: 600; }
+  .edu .date { font-size: 12px; color: var(--light); }
+  .edu-courses { font-size: 12px; color: #777; margin-top: 2px; }
+
+  /* 打印 */
+  @media print {
+    body { padding: 20px 32px; }
+    a { color: var(--text) !important; }
+  }
+
+  @media (max-width: 600px) {
+    body { padding: 16px; }
+    .skills-grid { grid-template-columns: 1fr; }
+    .header h1 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>李 显 锴</h1>
+  <div class="contact">
+    <span>📞 18927179581</span>
+    <span>✉ 3506195438@qq.com</span>
+    <a href="https://github.com/skylisxk">GitHub</a>
+    <a href="https://skylisxk.github.io/My_Profile">作品集</a>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section__title"><span>/</span> 求职意向</div>
+  <div class="summary" style="font-weight:600;">C++ 后端开发 / 网络服务端开发 · 实习</div>
+</div>
+
+<div class="section">
+  <div class="section__title"><span>/</span> 个人概述</div>
+  <div class="summary">
+    华南理工大学软件工程在读，具备扎实的 C++ 网络编程基础。独立完成高并发 Web 服务器、云盘通讯系统等后端项目，熟悉 TCP/IP 协议栈、多线程编程与 Linux 系统编程。目前在寻求 C++ 后端开发方向的实习机会。
+  </div>
+</div>
+
+<div class="section">
+  <div class="section__title"><span>/</span> 技能</div>
+  <dl class="skills-grid">
+    <dt>语言</dt>      <dd>C/C++（主力），熟悉 Python</dd>
+    <dt>系统编程</dt>  <dd>POSIX API、Epoll、非阻塞 I/O、多线程/多进程</dd>
+    <dt>网络编程</dt>  <dd>TCP/IP 协议栈、HTTP/1.1、自定义协议设计、粘包处理</dd>
+    <dt>数据库</dt>    <dd>MySQL、SQLite，理解索引优化与事务</dd>
+    <dt>工具</dt>      <dd>Qt、Git、Linux、GDB、CMake</dd>
+    <dt>英语</dt>      <dd>CET-6 509 分，技术文档阅读无障碍</dd>
+  </dl>
+</div>
+
+<div class="section">
+  <div class="section__title"><span>/</span> 项目经历</div>
+
+  <div class="project">
+    <div class="project__head">
+      <h3>高性能 Web 服务器</h3>
+      <span class="date">2026.04 — 2026.05</span>
+    </div>
+    <div class="project__tech">C++17 · Epoll · 线程池 · mmap · HTTP/1.1</div>
+    <div class="project__desc">
+      基于 Reactor + 线程池模型实现的高并发静态 Web 服务器，支持完整的 HTTP/1.1 协议。
+    </div>
+    <ul>
+      <li>Reactor + 线程池架构 — 主线程 Epoll 处理 I/O，工作线程异步执行磁盘操作，eventfd 跨线程通信</li>
+      <li>mmap 零拷贝 — 文件直接映射到内存传输，减少内核态拷贝</li>
+      <li>小根堆定时器 — O(log n) 增删、O(1) 获取超时连接，自动清理非活跃连接</li>
+      <li>异步日志 — 单例 + 后台线程 + 条件变量，日志不阻塞主循环</li>
+    </ul>
+    <div class="result">✅ 支持 GET/POST/HEAD、Keep-Alive、Range 断点续传、目录浏览</div>
+  </div>
+
+  <div class="project">
+    <div class="project__head">
+      <h3>云盘 & 即时通讯系统</h3>
+      <span class="date">2026.01 — 2026.04</span>
+    </div>
+    <div class="project__tech">C++ · Qt · TCP/IP · 自定义协议 · SQLite</div>
+    <div class="project__desc">
+      支持文件云存储、多用户通讯及好友管理的综合后端平台。
+    </div>
+    <ul>
+      <li>自定义 PDU 协议 — 变长设计 + peek 预读，解决 TCP 粘包/拆包</li>
+      <li>线程池调度 — 耗时任务异步执行，主线程不阻塞</li>
+      <li>生产者-消费者模型 — QThread + moveToThread 分离网络与磁盘 I/O</li>
+      <li>状态机管理 — 上传/下载流程严格状态控制，防止数据乱序与重复请求</li>
+      <li>实时进度反馈 — 异步 I/O + 回调，支持取消传输及临时文件自动清理</li>
+    </ul>
+    <div class="result">✅ 支持 10MB+ 文件稳定传输，传输中可并发浏览/删除文件</div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section__title"><span>/</span> 教育背景</div>
+  <div class="edu">
+    <span class="school">华南理工大学 · 软件工程（本科）</span>
+    <span class="date">2022.09 — 2027.07</span>
+  </div>
+  <div class="edu-courses">计算机网络 · 计算机组成原理 · 操作系统 · 数据结构 · 数据库</div>
+</div>
+
+</body>
+</html>

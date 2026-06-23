@@ -1,11 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python -m http.server *)",
-      "Bash(npx serve *)",
-      "Bash(mkdir *)",
-      "Bash(touch *)",
-      "WebFetch(domain:www.chenlizhe.cn)"
+      "WebFetch(domain:www.chenlizhe.cn)",
+      "Bash(git add *)",
+      "Bash(git commit -m '📝 更新真实个人信息 + 优化版简历 *)",
+      "Bash(git push *)"
     ]
   }
 }

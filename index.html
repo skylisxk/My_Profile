@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="个人作品集网站 — 展示项目、技能与经历">
-  <title>我的作品集</title>
+  <meta name="description" content="李显锴 - 个人作品集。C++ 后端开发，软件工程在读，热爱高性能服务端技术。">
+  <title>李显锴 | Portfolio</title>
 
   <!-- 预加载字体 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,14 +25,14 @@
   <!-- ============ 导航栏 ============ -->
   <header class="nav" data-nav>
     <div class="nav__inner">
-      <a href="#" class="nav__logo">&lt;<span>Me</span>/&gt;</a>
+      <a href="#" class="nav__logo">&lt;<span>LXK</span>/&gt;</a>
 
       <nav class="nav__links" data-nav-menu>
         <a href="#hero" class="nav__link nav__link--active">首页</a>
         <a href="#about" class="nav__link">关于</a>
         <a href="#skills" class="nav__link">技能</a>
         <a href="#projects" class="nav__link">项目</a>
-        <a href="#experience" class="nav__link">经历</a>
+        <a href="#experience" class="nav__link">教育</a>
         <a href="#contact" class="nav__link">联系</a>
       </nav>
 
@@ -57,18 +57,22 @@
         <div style="position:relative;z-index:1;min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:var(--nav-height) 0;">
           <span class="section__label animate-in animate-in--up">Hello，我是</span>
 
-          <h1 class="animate-in animate-in--up animate-in--delay-1" style="margin-bottom:var(--space-6);">
-            你的名字
+          <h1 class="animate-in animate-in--up animate-in--delay-1" style="margin-bottom:var(--space-3);">
+            李显锴
           </h1>
 
-          <p class="animate-in animate-in--up animate-in--delay-2" style="font-size:var(--text-xl);color:var(--color-text-secondary);max-width:560px;margin-bottom:var(--space-8);">
-            全栈开发者 / 热爱开源 / 持续学习中
-            <br>用代码构建有趣的东西。
+          <p class="animate-in animate-in--up animate-in--delay-2" style="font-size:var(--text-xl);color:var(--color-accent);font-weight:500;margin-bottom:var(--space-4);">
+            C++ 后端开发工程师
           </p>
 
-          <div class="animate-in animate-in--up animate-in--delay-3" style="display:flex;gap:var(--space-4);flex-wrap:wrap;">
+          <p class="animate-in animate-in--up animate-in--delay-3" style="font-size:var(--text-lg);color:var(--color-text-secondary);max-width:560px;margin-bottom:var(--space-8);">
+            华南理工大学 · 软件工程<br>
+            专注高性能网络编程与系统开发
+          </p>
+
+          <div class="animate-in animate-in--up animate-in--delay-4" style="display:flex;gap:var(--space-4);flex-wrap:wrap;">
             <a href="#projects" class="btn btn--primary btn--lg">查看项目</a>
-            <a href="#contact" class="btn btn--ghost btn--lg">联系我</a>
+            <a href="简历/简历-优化版.html" class="btn btn--ghost btn--lg">下载简历</a>
           </div>
         </div>
       </div>
@@ -78,28 +82,30 @@
     <section id="about" class="section section--about" data-section="about">
       <div class="section__container">
         <span class="section__label animate-in animate-in--up">关于我</span>
-        <h2 class="section__title animate-in animate-in--up animate-in--delay-1">简单的自我介绍</h2>
+        <h2 class="section__title animate-in animate-in--up animate-in--delay-1">简单介绍一下</h2>
         <p class="section__subtitle animate-in animate-in--up animate-in--delay-2">
-          我是一名热爱技术的开发者，专注于构建优雅、高性能的 Web 应用。
-          工作之余喜欢开源贡献、写技术博客、探索新工具。
+          华南理工大学软件工程在读（2022-2027），具备扎实的 C++ 网络编程基础。
+          独立完成高并发 Web 服务器、云盘通讯系统等后端项目，
+          熟悉 TCP/IP 协议栈、多线程编程与 Linux 系统编程。
+          目前在寻求 C++ 后端开发方向的实习机会。
         </p>
 
-        <div class="animate-in animate-in--up animate-in--delay-3" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--space-6);margin-top:var(--space-8);">
+        <div class="animate-in animate-in--up animate-in--delay-3" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:var(--space-6);margin-top:var(--space-8);">
           <div style="text-align:center;">
-            <div style="font-size:var(--text-4xl);font-weight:700;color:var(--color-primary);">3+</div>
-            <div style="font-size:var(--text-sm);color:var(--color-text-muted);">年开发经验</div>
+            <div style="font-size:var(--text-4xl);font-weight:700;color:var(--color-primary);">2</div>
+            <div style="font-size:var(--text-sm);color:var(--color-text-muted);">后端项目</div>
           </div>
           <div style="text-align:center;">
-            <div style="font-size:var(--text-4xl);font-weight:700;color:var(--color-primary);">20+</div>
-            <div style="font-size:var(--text-sm);color:var(--color-text-muted);">完成项目</div>
+            <div style="font-size:var(--text-4xl);font-weight:700;color:var(--color-primary);">CET-6</div>
+            <div style="font-size:var(--text-sm);color:var(--color-text-muted);">509 分</div>
           </div>
           <div style="text-align:center;">
-            <div style="font-size:var(--text-4xl);font-weight:700;color:var(--color-primary);">10+</div>
-            <div style="font-size:var(--text-sm);color:var(--color-text-muted);">技术栈掌握</div>
+            <div style="font-size:var(--text-4xl);font-weight:700;color:var(--color-primary);">C++</div>
+            <div style="font-size:var(--text-sm);color:var(--color-text-muted);">主力语言</div>
           </div>
           <div style="text-align:center;">
-            <div style="font-size:var(--text-4xl);font-weight:700;color:var(--color-primary);">∞</div>
-            <div style="font-size:var(--text-sm);color:var(--color-text-muted);">学习热情</div>
+            <div style="font-size:var(--text-4xl);font-weight:700;color:var(--color-primary);">Linux</div>
+            <div style="font-size:var(--text-sm);color:var(--color-text-muted);">日常开发环境</div>
           </div>
         </div>
       </div>
@@ -111,44 +117,41 @@
         <span class="section__label animate-in animate-in--up">技能树</span>
         <h2 class="section__title animate-in animate-in--up animate-in--delay-1">我能做什么</h2>
         <p class="section__subtitle animate-in animate-in--up animate-in--delay-2">
-          持续打磨的技术栈，覆盖前端、后端和工具链。
+          C++ 后端开发为核心，兼具系统编程与网络编程能力。
         </p>
 
         <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:var(--space-4);">
-          <!-- 前端 -->
           <div class="skill-card animate-in animate-in--scale animate-in--delay-1">
-            <span class="skill-card__icon">🖥️</span>
-            <span class="skill-card__name">HTML5</span>
+            <span class="skill-card__icon">⚙️</span>
+            <span class="skill-card__name">C / C++</span>
           </div>
           <div class="skill-card animate-in animate-in--scale animate-in--delay-2">
-            <span class="skill-card__icon">🎨</span>
-            <span class="skill-card__name">CSS3</span>
+            <span class="skill-card__icon">🐧</span>
+            <span class="skill-card__name">Linux</span>
           </div>
           <div class="skill-card animate-in animate-in--scale animate-in--delay-3">
-            <span class="skill-card__icon">⚡</span>
-            <span class="skill-card__name">JavaScript</span>
+            <span class="skill-card__icon">🔌</span>
+            <span class="skill-card__name">TCP/IP</span>
           </div>
           <div class="skill-card animate-in animate-in--scale animate-in--delay-4">
-            <span class="skill-card__icon">⚛️</span>
-            <span class="skill-card__name">React</span>
+            <span class="skill-card__icon">🧵</span>
+            <span class="skill-card__name">多线程</span>
           </div>
-          <!-- 后端 -->
           <div class="skill-card animate-in animate-in--scale animate-in--delay-1">
-            <span class="skill-card__icon">🟢</span>
-            <span class="skill-card__name">Node.js</span>
+            <span class="skill-card__icon">⚡</span>
+            <span class="skill-card__name">Epoll</span>
           </div>
           <div class="skill-card animate-in animate-in--scale animate-in--delay-2">
+            <span class="skill-card__icon">🗄️</span>
+            <span class="skill-card__name">MySQL</span>
+          </div>
+          <div class="skill-card animate-in animate-in--scale animate-in--delay-3">
+            <span class="skill-card__icon">🖥️</span>
+            <span class="skill-card__name">Qt</span>
+          </div>
+          <div class="skill-card animate-in animate-in--scale animate-in--delay-4">
             <span class="skill-card__icon">🐍</span>
             <span class="skill-card__name">Python</span>
-          </div>
-          <!-- 工具 -->
-          <div class="skill-card animate-in animate-in--scale animate-in--delay-3">
-            <span class="skill-card__icon">🐳</span>
-            <span class="skill-card__name">Docker</span>
-          </div>
-          <div class="skill-card animate-in animate-in--scale animate-in--delay-4">
-            <span class="skill-card__icon">📦</span>
-            <span class="skill-card__name">Git</span>
           </div>
         </div>
       </div>
@@ -158,113 +161,111 @@
     <section id="projects" class="section section--projects" data-section="projects">
       <div class="section__container">
         <span class="section__label animate-in animate-in--up">精选项目</span>
-        <h2 class="section__title animate-in animate-in--up animate-in--delay-1">我做过的一些东西</h2>
+        <h2 class="section__title animate-in animate-in--up animate-in--delay-1">做过的东西</h2>
         <p class="section__subtitle animate-in animate-in--up animate-in--delay-2">
-          每个项目都是一次学习，这里有我最骄傲的几个。
+          两个独立完成的后端项目，聚焦高性能与并发处理。
         </p>
 
-        <!-- 项目卡片 1 -->
+        <!-- 项目 1：高性能 Web 服务器 -->
         <div class="project-card animate-in animate-in--up animate-in--delay-3" style="margin-bottom:var(--space-8);">
           <div class="project-card__image">
             <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;background:linear-gradient(135deg,var(--color-primary-muted),var(--color-accent-muted));">
-              🚀
+              🌐
             </div>
           </div>
           <div class="project-card__content">
-            <h3 class="project-card__title">项目名称</h3>
+            <h3 class="project-card__title">高性能 Web 服务器</h3>
             <p class="project-card__desc">
-              项目的简短描述，说明它解决了什么问题、用到了哪些有意思的技术。
+              基于 Reactor + 线程池模型实现的高并发静态 Web 服务器。
+              Epoll 处理网络 I/O，mmap 零拷贝传输，小根堆定时器管理连接超时，
+              异步日志不阻塞主循环。支持 GET/POST/HEAD、Keep-Alive、Range 断点续传。
             </p>
             <div class="project-card__tags">
-              <span class="tag">React</span>
-              <span class="tag">Node.js</span>
-              <span class="tag">PostgreSQL</span>
+              <span class="tag">C++17</span>
+              <span class="tag">Epoll</span>
+              <span class="tag">线程池</span>
+              <span class="tag">mmap</span>
+              <span class="tag">HTTP/1.1</span>
             </div>
             <div class="project-card__links">
-              <a href="#" class="project-card__link" rel="noopener noreferrer" target="_blank">🔗 在线演示</a>
-              <a href="#" class="project-card__link" rel="noopener noreferrer" target="_blank">📂 源代码</a>
+              <span style="font-size:var(--text-sm);color:var(--color-text-muted);">📅 2026.04 — 2026.05</span>
             </div>
           </div>
         </div>
 
-        <!-- 项目卡片 2 -->
+        <!-- 项目 2：云盘 & 即时通讯系统 -->
         <div class="project-card animate-in animate-in--up animate-in--delay-4" style="margin-bottom:var(--space-8);">
           <div class="project-card__image">
             <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;background:linear-gradient(135deg,var(--color-accent-muted),var(--color-primary-muted));">
-              🎯
+              ☁️
             </div>
           </div>
           <div class="project-card__content">
-            <h3 class="project-card__title">另一个项目</h3>
+            <h3 class="project-card__title">云盘 & 即时通讯系统</h3>
             <p class="project-card__desc">
-              介绍一下这个项目的亮点和你的贡献，让访客一眼就能了解它的价值。
+              支持文件云存储、多用户通讯及好友管理的综合后端平台。
+              自定义 PDU 协议解决 TCP 粘包，生产者-消费者模型分离 I/O，
+              状态机管理上传下载流程，支持 10MB+ 文件稳定传输。
             </p>
             <div class="project-card__tags">
-              <span class="tag">Python</span>
-              <span class="tag">FastAPI</span>
-              <span class="tag">Redis</span>
+              <span class="tag">C++</span>
+              <span class="tag">Qt</span>
+              <span class="tag">TCP/IP</span>
+              <span class="tag">多线程</span>
+              <span class="tag">SQLite</span>
             </div>
             <div class="project-card__links">
-              <a href="#" class="project-card__link" rel="noopener noreferrer" target="_blank">🔗 在线演示</a>
-              <a href="#" class="project-card__link" rel="noopener noreferrer" target="_blank">📂 源代码</a>
+              <span style="font-size:var(--text-sm);color:var(--color-text-muted);">📅 2026.01 — 2026.04</span>
             </div>
           </div>
-        </div>
-
-        <div class="animate-in animate-in--up" style="text-align:center;margin-top:var(--space-8);">
-          <a href="#" class="btn btn--ghost">查看更多项目 →</a>
         </div>
       </div>
     </section>
 
-    <!-- ============ Experience 经历 ============ -->
+    <!-- ============ Education 教育 ============ -->
     <section id="experience" class="section section--experience" data-section="experience">
       <div class="section__container" style="max-width:var(--content-narrow);">
-        <span class="section__label animate-in animate-in--up">经历</span>
-        <h2 class="section__title animate-in animate-in--up animate-in--delay-1">我的旅程</h2>
+        <span class="section__label animate-in animate-in--up">教育</span>
+        <h2 class="section__title animate-in animate-in--up animate-in--delay-1">求学之路</h2>
         <p class="section__subtitle animate-in animate-in--up animate-in--delay-2">
-          一路走来的关键节点。
+          持续学习，持续成长。
         </p>
 
         <div style="position:relative;margin-top:var(--space-12);">
-          <!-- 经历 1 -->
+
           <div class="timeline-item animate-in animate-in--left animate-in--delay-3">
-            <span class="timeline-item__period">2024 — 至今</span>
+            <span class="timeline-item__period">2022 — 2027</span>
             <span class="timeline-item__dot"></span>
             <div>
-              <h3 class="timeline-item__role">前端开发工程师</h3>
-              <p class="timeline-item__company">某科技公司</p>
+              <h3 class="timeline-item__role">华南理工大学</h3>
+              <p class="timeline-item__company">软件工程 · 本科</p>
               <p class="timeline-item__desc">
-                负责核心产品前端架构设计和开发，使用 React + TypeScript 技术栈，
-                优化首屏加载性能提升 40%。
+                主修计算机网络、计算机组成原理、操作系统、数据结构、数据库。
+                英语 CET-6 509 分，技术文档阅读无障碍。
               </p>
             </div>
           </div>
 
-          <!-- 经历 2 -->
           <div class="timeline-item animate-in animate-in--left animate-in--delay-4">
-            <span class="timeline-item__period">2022 — 2024</span>
+            <span class="timeline-item__period">2026.04 — 2026.05</span>
             <span class="timeline-item__dot"></span>
             <div>
-              <h3 class="timeline-item__role">全栈开发实习生</h3>
-              <p class="timeline-item__company">某互联网公司</p>
+              <h3 class="timeline-item__role">高性能 Web 服务器</h3>
+              <p class="timeline-item__company">独立开发</p>
               <p class="timeline-item__desc">
-                参与内部工具开发，学习并实践了完整的项目开发流程，
-                从需求沟通到上线维护全流程参与。
+                C++17 + Epoll + 线程池，Reactor 架构，支持 HTTP/1.1 完整协议。
               </p>
             </div>
           </div>
 
-          <!-- 经历 3 -->
           <div class="timeline-item animate-in animate-in--left animate-in--delay-5">
-            <span class="timeline-item__period">2018 — 2022</span>
+            <span class="timeline-item__period">2026.01 — 2026.04</span>
             <span class="timeline-item__dot"></span>
             <div>
-              <h3 class="timeline-item__role">计算机科学与技术 本科</h3>
-              <p class="timeline-item__company">某大学</p>
+              <h3 class="timeline-item__role">云盘 & 即时通讯系统</h3>
+              <p class="timeline-item__company">独立开发</p>
               <p class="timeline-item__desc">
-                主修数据结构、算法、操作系统、计算机网络。
-                在校期间参与多个开源项目。
+                C++ + Qt + TCP/IP + SQLite，自定义 PDU 协议，多线程架构。
               </p>
             </div>
           </div>
@@ -297,12 +298,11 @@
           <button type="submit" class="btn btn--primary btn--lg" style="justify-self:start;">发送消息</button>
         </form>
 
-        <!-- 社交链接 -->
-        <div class="animate-in animate-in--up animate-in--delay-4" style="display:flex;gap:var(--space-6);margin-top:var(--space-12);justify-content:center;">
-          <a href="#" class="nav__link" rel="noopener noreferrer" target="_blank" style="font-size:var(--text-sm);color:var(--color-text-muted);">GitHub</a>
-          <a href="#" class="nav__link" rel="noopener noreferrer" target="_blank" style="font-size:var(--text-sm);color:var(--color-text-muted);">LinkedIn</a>
-          <a href="#" class="nav__link" rel="noopener noreferrer" target="_blank" style="font-size:var(--text-sm);color:var(--color-text-muted);">Twitter</a>
-          <a href="mailto:your@email.com" style="font-size:var(--text-sm);color:var(--color-text-muted);">Email</a>
+        <!-- 联系方式 -->
+        <div class="animate-in animate-in--up animate-in--delay-4" style="display:flex;gap:var(--space-8);margin-top:var(--space-12);justify-content:center;flex-wrap:wrap;">
+          <span style="font-size:var(--text-sm);color:var(--color-text-muted);">📞 18927179581</span>
+          <span style="font-size:var(--text-sm);color:var(--color-text-muted);">✉ 3506195438@qq.com</span>
+          <a href="https://github.com/skylisxk" rel="noopener noreferrer" target="_blank" style="font-size:var(--text-sm);color:var(--color-text-muted);">🔗 GitHub</a>
         </div>
       </div>
     </section>
@@ -311,7 +311,7 @@
 
   <!-- ============ 页脚 ============ -->
   <footer class="footer">
-    <p class="footer__text">© 2026 我的名字. Built with ❤️ and vanilla code.</p>
+    <p class="footer__text">© 2026 李显锴. Built with ❤️ and vanilla code.</p>
   </footer>
 
   <!-- JS（ES Module） -->
