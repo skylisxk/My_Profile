@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m http.server *)",
+      "Bash(npx serve *)",
+      "Bash(mkdir *)",
+      "Bash(touch *)",
+      "WebFetch(domain:www.chenlizhe.cn)"
+    ]
+  }
+}

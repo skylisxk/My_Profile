@@ -1,0 +1,154 @@
+/* ============================================
+   Animations — 关键帧动画 & 过渡效果
+   ============================================ */
+
+/* ---- 入场动画：从下方淡入 ---- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---- 入场动画：从左侧滑入 ---- */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ---- 入场动画：从右侧滑入 ---- */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ---- 缩放淡入 ---- */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ---- Hero 标题字符逐个出现 ---- */
+@keyframes charReveal {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---- 浮动动画（装饰元素）---- */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* ---- 光标的闪烁 ---- */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ---- 背景光晕呼吸 ---- */
+@keyframes glowPulse {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+}
+
+/* ============================================
+   可复用的入场类（JS 触发）
+   ============================================ */
+
+.animate-in {
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(0.22, 0.61, 0.36, 1),
+              transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+/* 初始隐藏位置 */
+.animate-in--up {
+  transform: translateY(30px);
+}
+
+.animate-in--left {
+  transform: translateX(-30px);
+}
+
+.animate-in--right {
+  transform: translateX(30px);
+}
+
+.animate-in--scale {
+  transform: scale(0.9);
+}
+
+/* JS 添加此类的瞬间：播放动画 */
+.animate-in--visible {
+  opacity: 1;
+  transform: translate(0) scale(1);
+}
+
+/* 延迟序列 —— 用于列表项逐个出现 */
+.animate-in--delay-1  { transition-delay: 0.1s; }
+.animate-in--delay-2  { transition-delay: 0.2s; }
+.animate-in--delay-3  { transition-delay: 0.3s; }
+.animate-in--delay-4  { transition-delay: 0.4s; }
+.animate-in--delay-5  { transition-delay: 0.5s; }
+.animate-in--delay-6  { transition-delay: 0.6s; }
+.animate-in--delay-7  { transition-delay: 0.7s; }
+.animate-in--delay-8  { transition-delay: 0.8s; }
+
+/* ---- 装饰光晕 ---- */
+.glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  animation: glowPulse 6s ease-in-out infinite;
+}
+
+.glow-orb--primary {
+  background: var(--color-primary);
+  opacity: 0.4;
+}
+
+.glow-orb--accent {
+  background: var(--color-accent);
+  opacity: 0.3;
+  animation-delay: 3s;
+}

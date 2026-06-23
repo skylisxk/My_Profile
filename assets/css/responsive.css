@@ -1,0 +1,107 @@
+/* ============================================
+   Responsive — 响应式断点覆盖
+   移动优先，各断点仅覆盖需要调整的样式
+   ============================================ */
+
+/* ---- ≥ 576px：大屏手机横屏 ---- */
+@media (min-width: 576px) {
+  :root {
+    --text-5xl: 3.5rem;
+    --text-4xl: 2.5rem;
+  }
+}
+
+/* ---- ≥ 768px：平板 ---- */
+@media (min-width: 768px) {
+  .nav__links {
+    display: flex;
+  }
+}
+
+/* ---- < 768px：移动端 ---- */
+@media (max-width: 767px) {
+  :root {
+    --nav-height: 56px;
+    --text-4xl: 2rem;
+    --text-5xl: 2.5rem;
+  }
+
+  .nav__links {
+    position: fixed;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-8);
+    background: var(--color-bg-primary);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--transition-base);
+  }
+
+  .nav__links--open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav__toggle {
+    display: flex;
+  }
+
+  .section {
+    padding: var(--space-16) var(--space-4);
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+
+  .timeline-item::before,
+  .timeline-item__dot {
+    display: none;
+  }
+
+  .timeline-item__period {
+    color: var(--color-primary);
+  }
+
+  .footer {
+    padding: var(--space-6) var(--space-4);
+  }
+}
+
+/* ---- ≥ 1024px：桌面 ---- */
+@media (min-width: 1024px) {
+  .section {
+    padding: var(--space-24) var(--space-8);
+  }
+}
+
+/* ---- ≥ 1200px：大桌面 ---- */
+@media (min-width: 1200px) {
+  :root {
+    --content-width: 1200px;
+  }
+}
+
+/* ---- 仅 hover 设备才显示 hover 效果 ---- */
+@media (hover: none) {
+  .skill-card:hover {
+    transform: none;
+    border-color: var(--color-border);
+    box-shadow: none;
+  }
+
+  .project-card:hover {
+    transform: none;
+  }
+}

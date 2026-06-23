@@ -1,0 +1,14 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Python (preview server)
+__pycache__/
+
+# Temp
+*.tmp
+*.log
