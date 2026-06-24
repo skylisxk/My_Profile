@@ -55,6 +55,8 @@
         <div class="glow-orb glow-orb--accent" style="width:300px;height:300px;bottom:-100px;left:-50px;"></div>
 
         <div style="position:relative;z-index:1;min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:var(--nav-height) 0;">
+          <img class="animate-in animate-in--scale" src="assets/images/avatar.jpg" alt="李显锴" style="width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid var(--color-border-hover);margin-bottom:var(--space-6);">
+
           <span class="section__label animate-in animate-in--up">Hello，我是</span>
 
           <h1 class="animate-in animate-in--up animate-in--delay-1" style="margin-bottom:var(--space-3);">
@@ -149,10 +151,6 @@
             <span class="skill-card__icon">🖥️</span>
             <span class="skill-card__name">Qt</span>
           </div>
-          <div class="skill-card animate-in animate-in--scale animate-in--delay-4">
-            <span class="skill-card__icon">🐍</span>
-            <span class="skill-card__name">Python</span>
-          </div>
         </div>
       </div>
     </section>
@@ -166,37 +164,10 @@
           两个独立完成的后端项目，聚焦高性能与并发处理。
         </p>
 
-        <!-- 项目 1：高性能 Web 服务器 -->
+        <!-- 项目 1：云盘 & 即时通讯系统 -->
         <div class="project-card animate-in animate-in--up animate-in--delay-3" style="margin-bottom:var(--space-8);">
           <div class="project-card__image">
             <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;background:linear-gradient(135deg,var(--color-primary-muted),var(--color-accent-muted));">
-              🌐
-            </div>
-          </div>
-          <div class="project-card__content">
-            <h3 class="project-card__title">高性能 Web 服务器</h3>
-            <p class="project-card__desc">
-              基于 Reactor + 线程池模型实现的高并发静态 Web 服务器。
-              Epoll 处理网络 I/O，mmap 零拷贝传输，小根堆定时器管理连接超时，
-              异步日志不阻塞主循环。支持 GET/POST/HEAD、Keep-Alive、Range 断点续传。
-            </p>
-            <div class="project-card__tags">
-              <span class="tag">C++17</span>
-              <span class="tag">Epoll</span>
-              <span class="tag">线程池</span>
-              <span class="tag">mmap</span>
-              <span class="tag">HTTP/1.1</span>
-            </div>
-            <div class="project-card__links">
-              <span style="font-size:var(--text-sm);color:var(--color-text-muted);">📅 2026.04 — 2026.05</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- 项目 2：云盘 & 即时通讯系统 -->
-        <div class="project-card animate-in animate-in--up animate-in--delay-4" style="margin-bottom:var(--space-8);">
-          <div class="project-card__image">
-            <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;background:linear-gradient(135deg,var(--color-accent-muted),var(--color-primary-muted));">
               ☁️
             </div>
           </div>
@@ -216,6 +187,33 @@
             </div>
             <div class="project-card__links">
               <span style="font-size:var(--text-sm);color:var(--color-text-muted);">📅 2026.01 — 2026.04</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 项目 2：高性能 Web 服务器 -->
+        <div class="project-card animate-in animate-in--up animate-in--delay-4" style="margin-bottom:var(--space-8);">
+          <div class="project-card__image">
+            <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;background:linear-gradient(135deg,var(--color-accent-muted),var(--color-primary-muted));">
+              🌐
+            </div>
+          </div>
+          <div class="project-card__content">
+            <h3 class="project-card__title">高性能 Web 服务器</h3>
+            <p class="project-card__desc">
+              基于 Reactor + 线程池模型实现的高并发静态 Web 服务器。
+              Epoll 处理网络 I/O，mmap 零拷贝传输，小根堆定时器管理连接超时，
+              异步日志不阻塞主循环。支持 GET/POST/HEAD、Keep-Alive、Range 断点续传。
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">C++17</span>
+              <span class="tag">Epoll</span>
+              <span class="tag">线程池</span>
+              <span class="tag">mmap</span>
+              <span class="tag">HTTP/1.1</span>
+            </div>
+            <div class="project-card__links">
+              <span style="font-size:var(--text-sm);color:var(--color-text-muted);">📅 2026.04 — 2026.05</span>
             </div>
           </div>
         </div>
