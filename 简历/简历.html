@@ -18,10 +18,10 @@
   body {
     font-family: 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', sans-serif;
     color: var(--text);
-    line-height: 1.35;
+    line-height: 1.45;
     max-width: 780px;
     margin: 0 auto;
-    padding: 20px 32px;
+    padding: 24px 36px;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
@@ -31,60 +31,60 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 16px;
+    gap: 20px;
     border-bottom: 2px solid var(--primary);
-    padding-bottom: 8px;
-    margin-bottom: 10px;
+    padding-bottom: 12px;
+    margin-bottom: 13px;
   }
   .header__info { flex: 1; }
   .header__photo {
-    width: 80px;
-    height: 107px;
+    width: 88px;
+    height: 117px;
     object-fit: cover;
     border: 1px solid var(--border);
     flex-shrink: 0;
   }
-  .header h1 { font-size: 22px; letter-spacing: 3px; margin-bottom: 2px; }
-  .header .contact { font-size: 10.5px; color: var(--light); display: flex; gap: 12px; flex-wrap: wrap; }
+  .header h1 { font-size: 24px; letter-spacing: 4px; margin-bottom: 3px; }
+  .header .contact { font-size: 11px; color: var(--light); display: flex; gap: 14px; flex-wrap: wrap; }
   .header .contact a { color: var(--accent); text-decoration: none; }
 
   /* 板块 */
-  .section { margin-bottom: 8px; }
+  .section { margin-bottom: 11px; }
   .section__title {
-    font-size: 12px; font-weight: 700; letter-spacing: 1px;
+    font-size: 13px; font-weight: 700; letter-spacing: 1px;
     border-bottom: 1px solid var(--border);
-    padding-bottom: 1px; margin-bottom: 4px;
+    padding-bottom: 2px; margin-bottom: 6px;
   }
   .section__title span { color: var(--accent); }
 
   /* 求职 & 概述 */
-  .job-target { font-size: 12px; font-weight: 700; margin-bottom: 2px; }
+  .job-target { font-size: 12.5px; font-weight: 700; margin-bottom: 3px; }
 
   /* 技能网格 */
-  .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px 16px; font-size: 10.5px; }
+  .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 18px; font-size: 11.5px; }
   .skills-grid dt { font-weight: 700; }
   .skills-grid dd { color: #444; }
 
   /* 项目 */
-  .project { margin-bottom: 8px; }
+  .project { margin-bottom: 10px; }
   .project__head { display: flex; justify-content: space-between; align-items: baseline; }
-  .project__head h3 { font-size: 12px; font-weight: 700; }
-  .project__head .date { font-size: 10px; color: #888; white-space: nowrap; }
-  .project__tech { font-size: 10px; color: var(--accent); font-weight: 600; margin-bottom: 1px; }
-  .project__desc { font-size: 10.5px; color: #555; margin-bottom: 1px; }
-  .project ul { list-style: none; font-size: 10px; }
-  .project ul li { position: relative; padding-left: 10px; margin-bottom: 0; color: #555; }
-  .project ul li::before { content: '▸'; position: absolute; left: 0; font-size: 8px; color: var(--accent); }
-  .result { font-size: 10px; color: #2e7d32; margin-top: 1px; }
+  .project__head h3 { font-size: 13px; font-weight: 700; }
+  .project__head .date { font-size: 10.5px; color: #888; white-space: nowrap; }
+  .project__tech { font-size: 10.5px; color: var(--accent); font-weight: 600; margin-bottom: 2px; }
+  .project__desc { font-size: 11px; color: #555; margin-bottom: 2px; }
+  .project ul { list-style: none; font-size: 10.5px; }
+  .project ul li { position: relative; padding-left: 11px; margin-bottom: 1px; color: #555; }
+  .project ul li::before { content: '▸'; position: absolute; left: 0; font-size: 9px; color: var(--accent); }
+  .result { font-size: 10.5px; color: #2e7d32; margin-top: 2px; }
 
   /* 教育 */
-  .edu { display: flex; justify-content: space-between; align-items: baseline; font-size: 11px; }
+  .edu { display: flex; justify-content: space-between; align-items: baseline; font-size: 12px; }
   .edu .school { font-weight: 700; }
-  .edu .date { font-size: 10px; color: #888; }
-  .edu-courses { font-size: 10.5px; color: #666; margin-top: 1px; }
+  .edu .date { font-size: 10.5px; color: #888; }
+  .edu-courses { font-size: 11px; color: #666; margin-top: 2px; }
 
   @media print {
-    body { padding: 12px 20px; }
+    body { padding: 20px 28px; }
     a { color: var(--text) !important; }
   }
 </style>
@@ -106,7 +106,7 @@
 
 <div class="section">
   <div class="job-target">求职意向：C++ 后端开发 / 网络服务端开发 · 实习</div>
-  <div style="font-size:10.5px;color:#555;">
+  <div style="font-size:11px;color:#555;">
     华南理工大学软件工程本科在读（2022–2027），掌握 C++ 网络编程，了解设计模式，
     独立完成云盘通讯系统与高性能 Web 服务器两个后端项目。
   </div>
