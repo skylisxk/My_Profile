@@ -18,10 +18,10 @@
   body {
     font-family: 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', sans-serif;
     color: var(--text);
-    line-height: 1.45;
+    line-height: 1.35;
     max-width: 780px;
     margin: 0 auto;
-    padding: 28px 36px;
+    padding: 20px 32px;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
@@ -31,60 +31,60 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 20px;
+    gap: 16px;
     border-bottom: 2px solid var(--primary);
-    padding-bottom: 12px;
-    margin-bottom: 14px;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
   }
   .header__info { flex: 1; }
   .header__photo {
-    width: 85px;
-    height: 113px;
+    width: 80px;
+    height: 107px;
     object-fit: cover;
     border: 1px solid var(--border);
     flex-shrink: 0;
   }
-  .header h1 { font-size: 24px; letter-spacing: 3px; margin-bottom: 4px; }
-  .header .contact { font-size: 11px; color: var(--light); display: flex; gap: 14px; flex-wrap: wrap; }
+  .header h1 { font-size: 22px; letter-spacing: 3px; margin-bottom: 2px; }
+  .header .contact { font-size: 10.5px; color: var(--light); display: flex; gap: 12px; flex-wrap: wrap; }
   .header .contact a { color: var(--accent); text-decoration: none; }
 
   /* 板块 */
-  .section { margin-bottom: 11px; }
+  .section { margin-bottom: 8px; }
   .section__title {
-    font-size: 13px; font-weight: 700; letter-spacing: 1px;
+    font-size: 12px; font-weight: 700; letter-spacing: 1px;
     border-bottom: 1px solid var(--border);
-    padding-bottom: 2px; margin-bottom: 6px;
+    padding-bottom: 1px; margin-bottom: 4px;
   }
   .section__title span { color: var(--accent); }
 
   /* 求职 & 概述 */
-  .job-target { font-size: 12.5px; font-weight: 700; margin-bottom: 4px; }
+  .job-target { font-size: 12px; font-weight: 700; margin-bottom: 2px; }
 
   /* 技能网格 */
-  .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 20px; font-size: 12px; }
+  .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px 16px; font-size: 10.5px; }
   .skills-grid dt { font-weight: 700; }
   .skills-grid dd { color: #444; }
 
   /* 项目 */
-  .project { margin-bottom: 10px; }
+  .project { margin-bottom: 8px; }
   .project__head { display: flex; justify-content: space-between; align-items: baseline; }
-  .project__head h3 { font-size: 12.5px; font-weight: 700; }
-  .project__head .date { font-size: 11px; color: #888; white-space: nowrap; }
-  .project__tech { font-size: 10.5px; color: var(--accent); font-weight: 600; margin-bottom: 2px; }
-  .project__desc { font-size: 11px; color: #555; margin-bottom: 3px; }
-  .project ul { list-style: none; font-size: 11px; }
-  .project ul li { position: relative; padding-left: 12px; margin-bottom: 1px; color: #555; }
-  .project ul li::before { content: '▸'; position: absolute; left: 0; font-size: 9px; color: var(--accent); }
-  .result { font-size: 10.5px; color: #2e7d32; margin-top: 2px; }
+  .project__head h3 { font-size: 12px; font-weight: 700; }
+  .project__head .date { font-size: 10px; color: #888; white-space: nowrap; }
+  .project__tech { font-size: 10px; color: var(--accent); font-weight: 600; margin-bottom: 1px; }
+  .project__desc { font-size: 10.5px; color: #555; margin-bottom: 1px; }
+  .project ul { list-style: none; font-size: 10px; }
+  .project ul li { position: relative; padding-left: 10px; margin-bottom: 0; color: #555; }
+  .project ul li::before { content: '▸'; position: absolute; left: 0; font-size: 8px; color: var(--accent); }
+  .result { font-size: 10px; color: #2e7d32; margin-top: 1px; }
 
   /* 教育 */
-  .edu { display: flex; justify-content: space-between; align-items: baseline; font-size: 12px; }
+  .edu { display: flex; justify-content: space-between; align-items: baseline; font-size: 11px; }
   .edu .school { font-weight: 700; }
-  .edu .date { font-size: 11px; color: #888; }
-  .edu-courses { font-size: 11px; color: #666; margin-top: 1px; }
+  .edu .date { font-size: 10px; color: #888; }
+  .edu-courses { font-size: 10.5px; color: #666; margin-top: 1px; }
 
   @media print {
-    body { padding: 16px 24px; }
+    body { padding: 12px 20px; }
     a { color: var(--text) !important; }
   }
 </style>
@@ -106,7 +106,7 @@
 
 <div class="section">
   <div class="job-target">求职意向：C++ 后端开发 / 网络服务端开发 · 实习</div>
-  <div style="font-size:11.5px;color:#555;">
+  <div style="font-size:10.5px;color:#555;">
     华南理工大学软件工程本科在读（2022–2027），掌握 C++ 网络编程，了解设计模式，
     独立完成云盘通讯系统与高性能 Web 服务器两个后端项目。
   </div>
@@ -119,8 +119,8 @@
     <dt>网络编程</dt>   <dd>掌握 TCP/IP 协议栈，掌握自定义协议设计与粘包/拆包处理，了解 Qt 多线程与高并发模型</dd>
     <dt>数据库</dt>     <dd>掌握 SQL，了解 SQL 优化与事务处理</dd>
     <dt>Linux</dt>      <dd>掌握 POSIX API，了解非阻塞 I/O 与事件驱动模型</dd>
-    <dt>HTTP</dt>       <dd>掌握 HTTP/1.1 请求/响应格式、状态码、Range 请求、Keep-Alive 连接复用</dd>
-    <dt>工具</dt>       <dd>了解 Git、GDB、CMake</dd>
+    <dt>HTTP / WebSocket</dt> <dd>掌握 HTTP/1.1 协议解析、Range 请求、Keep-Alive 长连接；了解 RFC 6455 WebSocket 握手与帧协议</dd>
+    <dt>工具</dt>       <dd>了解 Git、GDB、CMake、Docker</dd>
     <dt>英语</dt>       <dd>CET-6 · 509 分</dd>
   </dl>
 </div>
@@ -142,24 +142,30 @@
       <li>状态机管理上传/下载流程，防止数据流乱序与重复请求</li>
       <li>单例模式管理核心类，invokeMethod 保证线程安全</li>
       <li>异步 I/O 结合进度回调，支持传输取消及临时文件自动清理</li>
+      <li>PDU 协议扩展 startPos 字段实现断点续传，支持上传/下载中断恢复</li>
+      <li>客户端持久追踪已传输字节数，中断后可自动识别并弹窗询问续传</li>
+      <li>服务端 Seek + Resize 对齐续传起点，完成时校验文件大小并自动截断尾部残留</li>
+      <li>TCP 流中控制 PDU 穿透 + 文件数据限长读取，解决二进制数据误解析为协议消息的问题</li>
     </ul>
-    <div class="result">✅ 支持 10MB+ 文件稳定传输，传输中可并发浏览、删除文件；支持文件重名自动重命名、好友实时聊天</div>
+    <div class="result">◆ 支持大文件稳定传输及断点续传（中断恢复、取消后保留部分文件）<br>◆ 传输中可并发浏览、删除文件，支持文件重名自动重命名、好友实时聊天</div>
   </div>
 
   <div class="project">
     <div class="project__head">
       <h3>高性能 Web 服务器</h3>
-      <span class="date">2026.04 — 2026.05</span>
+      <span class="date">2026.04 — 2026.06</span>
     </div>
-    <div class="project__tech">C++17 · Epoll · 线程池 · mmap · HTTP/1.1</div>
-    <div class="project__desc">基于 Reactor + 线程池模型的高并发静态 Web 服务器。</div>
+    <div class="project__tech">C++17 · Epoll · 线程池 · mmap · WebSocket · Docker · GTest</div>
+    <div class="project__desc">基于 Reactor + 线程池模型的高并发 Web 服务器，支持 HTTP/1.1 与 WebSocket 协议。</div>
     <ul>
-      <li>主线程 Epoll 处理网络 I/O，线程池异步执行磁盘 I/O，eventfd 跨线程通知</li>
-      <li>mmap 零拷贝传输，减少数据拷贝次数</li>
-      <li>小根堆定时器：O(log n) 增删、O(1) 获取最早超时连接，自动踢除非活跃连接</li>
+      <li>主线程 Epoll 处理网络 I/O，线程池异步执行磁盘 I/O，eventfd 跨线程唤醒</li>
+      <li>mmap 零拷贝传输 + HTTP Range 断点续传，支持 206 Partial Content 响应</li>
+      <li>小根堆定时器：O(log n) 增删、O(1) 获取最早超时连接，自动清理非活跃连接</li>
       <li>异步日志系统：单例模式 + 后台线程 + 条件变量，日志写入不阻塞主事件循环</li>
+      <li>实现 RFC 6455 WebSocket 协议：Upgrade 握手、帧解析/掩码处理、Echo 回显；自研 SHA-1 + Base64，零外部依赖</li>
+      <li>Docker 多阶段构建部署，镜像体积精简；docker-compose 一键编排</li>
     </ul>
-    <div class="result">✅ 支持 GET/POST/HEAD 方法、Keep-Alive 连接、目录浏览及 HTTP Range 断点续传</div>
+    <div class="result">◆ 支持 GET/POST/HEAD 方法、Keep-Alive 长连接、目录浏览、Range 断点续传、WebSocket 全双工通信<br>◆ 编写 73 个单元测试（GTest），覆盖配置解析、HTTP 请求解析、MIME 检测、目录生成、定时器管理等模块</div>
   </div>
 </div>
 

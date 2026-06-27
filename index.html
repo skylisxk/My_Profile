@@ -72,7 +72,7 @@
 
           <div class="animate-in animate-in--up animate-in--delay-4" style="display:flex;gap:var(--space-4);flex-wrap:wrap;">
             <a href="#projects" class="btn btn--primary btn--lg">查看项目</a>
-            <a href="简历/简历-优化版.html" class="btn btn--ghost btn--lg">下载简历</a>
+            <a href="简历/简历.html" class="btn btn--ghost btn--lg">下载简历</a>
           </div>
         </div>
       </div>
@@ -84,9 +84,9 @@
         <span class="section__label animate-in animate-in--up">关于我</span>
         <h2 class="section__title animate-in animate-in--up animate-in--delay-1">简单介绍一下</h2>
         <p class="section__subtitle animate-in animate-in--up animate-in--delay-2">
-          华南理工大学软件工程在读（2022-2027），具备扎实的 C++ 网络编程基础。
-          独立完成高并发 Web 服务器、云盘通讯系统等后端项目，
-          熟悉 TCP/IP 协议栈、多线程编程与 Linux 系统编程。
+          华南理工大学软件工程本科在读（2022–2027），掌握 C++ 网络编程，了解设计模式，
+          独立完成云盘通讯系统与高性能 Web 服务器两个后端项目，
+          涵盖 TCP/IP 协议栈、Epoll 多路复用、多线程并发及 WebSocket 全双工通信。
           目前在寻求 C++ 后端开发方向的实习机会。
         </p>
 
@@ -149,6 +149,14 @@
             <span class="skill-card__icon">🖥️</span>
             <span class="skill-card__name">Qt</span>
           </div>
+          <div class="skill-card animate-in animate-in--scale animate-in--delay-4">
+            <span class="skill-card__icon">🔗</span>
+            <span class="skill-card__name">WebSocket</span>
+          </div>
+          <div class="skill-card animate-in animate-in--scale animate-in--delay-1">
+            <span class="skill-card__icon">🐳</span>
+            <span class="skill-card__name">Docker</span>
+          </div>
         </div>
       </div>
     </section>
@@ -173,8 +181,8 @@
             <h3 class="project-card__title">云盘 & 即时通讯系统</h3>
             <p class="project-card__desc">
               支持文件云存储、多用户通讯及好友管理的综合后端平台。
-              自定义 PDU 协议解决 TCP 粘包，生产者-消费者模型分离 I/O，
-              状态机管理上传下载流程，支持 10MB+ 文件稳定传输。
+              自定义变长 PDU 协议解决 TCP 粘包，生产者-消费者模型分离 I/O，
+              状态机管理上传下载流程。支持断点续传（中断恢复），10MB+ 文件稳定传输。
             </p>
             <div class="project-card__tags">
               <span class="tag">C++</span>
@@ -182,6 +190,7 @@
               <span class="tag">TCP/IP</span>
               <span class="tag">多线程</span>
               <span class="tag">SQLite</span>
+              <span class="tag">断点续传</span>
             </div>
             <div class="project-card__links">
               <span style="font-size:var(--text-sm);color:var(--color-text-muted);">📅 2026.01 — 2026.04</span>
@@ -199,19 +208,21 @@
           <div class="project-card__content">
             <h3 class="project-card__title">高性能 Web 服务器</h3>
             <p class="project-card__desc">
-              基于 Reactor + 线程池模型实现的高并发静态 Web 服务器。
-              Epoll 处理网络 I/O，mmap 零拷贝传输，小根堆定时器管理连接超时，
-              异步日志不阻塞主循环。支持 GET/POST/HEAD、Keep-Alive、Range 断点续传。
+              基于 Reactor + 线程池模型的高并发 Web 服务器，支持 HTTP/1.1 与 WebSocket 协议。
+              Epoll 处理网络 I/O，mmap 零拷贝，小根堆定时器管理连接超时，异步日志。
+              实现 RFC 6455 WebSocket（Upgrade 握手、帧解析、自研 SHA-1 + Base64）。
+              Docker 多阶段构建部署，编写 73 个 GTest 单元测试。
             </p>
             <div class="project-card__tags">
               <span class="tag">C++17</span>
               <span class="tag">Epoll</span>
-              <span class="tag">线程池</span>
+              <span class="tag">WebSocket</span>
               <span class="tag">mmap</span>
-              <span class="tag">HTTP/1.1</span>
+              <span class="tag">Docker</span>
+              <span class="tag">GTest</span>
             </div>
             <div class="project-card__links">
-              <span style="font-size:var(--text-sm);color:var(--color-text-muted);">📅 2026.04 — 2026.05</span>
+              <span style="font-size:var(--text-sm);color:var(--color-text-muted);">📅 2026.04 — 2026.06</span>
             </div>
           </div>
         </div>
@@ -243,13 +254,13 @@
           </div>
 
           <div class="timeline-item animate-in animate-in--left animate-in--delay-4">
-            <span class="timeline-item__period">2026.04 — 2026.05</span>
+            <span class="timeline-item__period">2026.04 — 2026.06</span>
             <span class="timeline-item__dot"></span>
             <div>
               <h3 class="timeline-item__role">高性能 Web 服务器</h3>
               <p class="timeline-item__company">独立开发</p>
               <p class="timeline-item__desc">
-                C++17 + Epoll + 线程池，Reactor 架构，支持 HTTP/1.1 完整协议。
+                C++17 + Epoll + 线程池 + WebSocket + Docker，Reactor 架构，73 个 GTest 单元测试。
               </p>
             </div>
           </div>
