@@ -1,0 +1,1 @@
+- [简历 HTML 与 PDF 同步](memory/resume-html-pdf-sync.md) — 修改简历时必须同时更新 HTML 和 PDF
