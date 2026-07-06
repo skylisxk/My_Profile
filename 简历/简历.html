@@ -140,21 +140,15 @@
   <div class="project">
     <div class="project__head">
       <h3>云盘 & 即时通讯系统</h3>
-      <span class="date">2026.01 — 2026.04</span>
+      <span class="date">2026.12 — 2026.04</span>
     </div>
     <div class="project__tech">C++ · Qt · TCP/IP · 自定义协议 · SQLite</div>
     <div class="project__desc">支持文件云存储、多用户通讯及好友管理的综合平台。</div>
     <ul>
-      <li>自定义线程池处理耗时任务，避免主线程阻塞</li>
-      <li>生产者-消费者模型（QThread + moveToThread）分离网络与磁盘 I/O，减小 UI 卡顿</li>
-      <li>自定义变长 PDU 协议 + peek 预读，解决 TCP 粘包</li>
-      <li>状态机管理上传/下载流程，防止数据流乱序与重复请求</li>
-      <li>单例模式管理核心类，invokeMethod 保证线程安全</li>
-      <li>异步 I/O 结合进度回调，支持传输取消及临时文件自动清理</li>
-      <li>PDU 协议扩展 startPos 字段实现断点续传，支持上传/下载中断恢复</li>
-      <li>客户端持久追踪已传输字节数，中断后可自动识别并弹窗询问续传</li>
-      <li>服务端 Seek + Resize 对齐续传起点，完成时校验文件大小并自动截断尾部残留</li>
-      <li>TCP 流中控制 PDU 穿透 + 文件数据限长读取，解决二进制数据误解析为协议消息的问题</li>
+      <li>自定义变长 PDU 协议 + peek 预读解决 TCP 粘包，状态机管理上传/下载流程；控制 PDU 穿透机制防止文件数据误解析</li>
+      <li>QThread + moveToThread 分离网络与磁盘 I/O，自定义线程池处理耗时任务；单例模式管理核心类，invokeMethod 保证线程安全</li>
+      <li>PDU 扩展 startPos 字段实现断点续传：客户端自动识别中断并弹窗询问，服务端 Seek + Resize 对齐起点并校验文件完整性</li>
+      <li>异步 I/O 结合进度回调，支持多项目并发传输、传输取消及取消后保留部分文件供续传</li>
     </ul>
     <div class="result">◆ 支持大文件稳定传输及断点续传（中断恢复、取消后保留部分文件）<br>◆ 传输中可并发浏览、删除文件，支持文件重名自动重命名、好友实时聊天</div>
   </div>
