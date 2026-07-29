@@ -155,15 +155,15 @@
 
   <div class="project">
     <div class="project__head">
-      <h3>高性能 Web 服务器</h3>
+      <h3>高性能 Linux Web 服务器</h3>
       <span class="date">2026.04 — 2026.06</span>
     </div>
     <div class="project__tech">C++17 · Epoll · OpenSSL · 线程池 · mmap · WebSocket · Docker · GTest</div>
     <div class="project__desc">基于 Reactor + 线程池模型的高并发 Web 服务器，支持 HTTP/1.1 与 WebSocket 协议。</div>
     <ul>
       <li>主线程 Epoll 处理网络 I/O，线程池异步执行磁盘 I/O，eventfd 跨线程唤醒</li>
-      <li>mmap 零拷贝传输 + HTTP Range 断点续传，支持 206 Partial Content 响应</li>
       <li>基于 OpenSSL 实现 TLS 1.3 加密：非阻塞握手集成 Epoll 事件循环，HTTPS 与 HTTP 双端口并行</li>
+      <li>mmap 零拷贝传输 + HTTP Range 断点续传，支持 206 Partial Content 响应</li>
       <li>小根堆定时器：O(log n) 增删、O(1) 获取最早超时连接，自动清理非活跃连接</li>
       <li>异步日志系统：单例模式 + 后台线程 + 条件变量，日志写入不阻塞主事件循环</li>
 
